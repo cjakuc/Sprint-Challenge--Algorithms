@@ -6,7 +6,7 @@ a)
 The time complexity of this code is O(n). Although the while loop runs until "a" is greater than n^3, "a" is incremented by n^2 each iteration.
 
 b)
-The time complexity of this code is O(n^2). There are two loops, both dependent on the size of "n". Though the second loop will never iterate for "n" times, it is still dependent on the size of "n".
+The time complexity of this code is O(n * log n). There are two loops (one within the other), both dependent on the size of "n". The first loop has a run-time complexity of O(n). The second loop has a run-time complexity of O(log n). Because the second loop is within the first, the run-time complexities are multiplied to get O(n * log n)
 
 c)
 The time complexity of this code is O(n). For every value of "bunnies" greater than 0, the function will recurse 1 + "bunnies" amount of times.
@@ -31,3 +31,5 @@ The time complexity of this code is O(n). For every value of "bunnies" greater t
                 <!-- make the first floor the value of the current middle -->
 
             <!-- Keep looping until you find the highest floor where the egg doesn't break -->
+
+Run-time complexity is O(log n)

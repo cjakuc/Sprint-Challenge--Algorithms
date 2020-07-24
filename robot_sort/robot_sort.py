@@ -122,7 +122,7 @@ class SortingRobot:
                 self.move_left()
             self.swap_item()
 
-            # Move right once and put none there
+            # Move right once
             self.move_right()
 
                     
